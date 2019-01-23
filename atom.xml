@@ -2,15 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Inquisitional ? Delusional ? Philosophical ?</title>
   
-  
+  <subtitle>An equally insignificant person to the vastness surrounding us!!!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://barmy.me/"/>
   <updated>2019-01-21T00:26:03.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://barmy.me/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Vaibhav Agrawal</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/01/21/hello-world/"/>
-    <id>http://yoursite.com/2019/01/21/hello-world/</id>
+    <link href="http://barmy.me/2019/01/21/hello-world/"/>
+    <id>http://barmy.me/2019/01/21/hello-world/</id>
     <published>2019-01-21T00:26:03.000Z</published>
     <updated>2019-01-21T00:26:03.000Z</updated>
     
