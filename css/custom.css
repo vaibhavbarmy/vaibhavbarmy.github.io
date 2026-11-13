@@ -1,0 +1,38 @@
+.nav-logo {
+  display: inline-block;
+  width: 1.05em;
+  height: 1.05em;
+  margin-right: 0.3em;
+  vertical-align: -0.15em;
+  background-color: currentColor;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+.nav-logo-archive {
+  -webkit-mask-image: url(/img/nav/archive.svg);
+  mask-image: url(/img/nav/archive.svg);
+}
+.nav-logo-about {
+  -webkit-mask-image: url(/img/nav/about.svg);
+  mask-image: url(/img/nav/about.svg);
+}
+.nav-logo-github {
+  -webkit-mask-image: url(/img/nav/github.svg);
+  mask-image: url(/img/nav/github.svg);
+}
+.nav-logo-twitter {
+  -webkit-mask-image: url(/img/nav/twitter.svg);
+  mask-image: url(/img/nav/twitter.svg);
+}
+
+/* Homepage nav hover: white, not Fluid blue */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:hover i,
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  color: #fff !important;
+}

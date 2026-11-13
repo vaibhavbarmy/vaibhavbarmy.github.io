@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#080d1c"><meta name="description" content="OrbitWheel - Tạo vòng quay ngẫu nhiên đẹp mắt, tùy chỉnh xác suất, nhiều vòng quay và chia sẻ tức thì."><title>OrbitWheel | Make your chance</title><link rel="stylesheet" href="./styles.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NG7GWN8N');</script>
+<!-- End Google Tag Manager --></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NG7GWN8N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="app-shell">
+ <aside class="sidebar" id="sidebar">
+  <a class="brand" href="./" aria-label="OrbitWheel home"><span class="brand-icon">✳</span><span>orbit<span class="brand-accent">wheel</span><small>THE RANDOM STUDIO</small></span></a>
+  <div class="sidebar-label">WORKSPACE</div>
+  <button class="nav-item active" data-tab="entries"><span class="nav-icon">▦</span> Entries <span class="nav-note" id="entryBadge">6</span></button>
+  <button class="nav-item" data-tab="appearance"><span class="nav-icon">◉</span> Appearance</button>
+  <button class="nav-item" data-tab="settings"><span class="nav-icon">⚙</span> Spin settings</button>
+  <button class="nav-item" data-tab="wheels"><span class="nav-icon">◎</span> My wheels <span class="nav-note" id="wheelsBadge">1</span></button>
+  <div class="sidebar-label space-top">QUICK START</div>
+  <button class="nav-item" id="templatesBtn"><span class="nav-icon">◇</span> Templates</button>
+  <button class="nav-item" id="historyBtn"><span class="nav-icon">◷</span> Spin history</button>
+  <div class="sidebar-bottom"><div class="status-pill"><span class="green-dot"></span> Free, no sign-up needed</div><div class="sidebar-foot">Made for decisions big and small.</div></div>
+ </aside>
+ <div class="main-layout">
+  <header class="topbar"><button class="mobile-menu icon-btn" id="menuBtn" aria-label="Open menu">☰</button><div class="breadcrumbs">STUDIO <span>/</span> <strong id="crumbTitle">Untitled wheel</strong></div><div class="top-actions"><span class="autosaved" id="savedStatus">● Autosaved</span><button class="header-btn" id="importBtn">Import</button><button class="header-btn" id="exportBtn">Export</button><button class="header-btn header-primary" id="shareBtn">↗ Share</button></div></header>
+  <main class="workspace">
+   <section class="hero"><div class="eyebrow">YOUR CREATIVE RANDOMIZER <span class="eyebrow-line"></span> 01 / STUDIO</div><h1>Every spin has <em>a story.</em></h1><p>Make the decision. Find the winner. Let chance do its thing.</p></section>
+   <div class="workspace-grid"><section class="studio-panel">
+    <div class="panel-top"><div><div class="panel-overline">LIVE WHEEL</div><input id="wheelTitle" class="wheel-title" aria-label="Wheel title" value="Friday night picks" maxlength="70" /></div><div class="wheel-actions"><button class="icon-btn" id="fullscreenBtn" title="Fullscreen">⛶</button><button class="icon-btn" id="duplicateBtn" title="Duplicate wheel">▣</button><button class="icon-btn" id="moreBtn" title="More options">⋯</button></div></div>
+    <div class="wheel-area" id="wheelArea"><div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div><div class="wheel-frame" id="wheelFrame"><canvas id="wheelCanvas" width="900" height="900" aria-label="Random spin wheel"></canvas><div class="pointer"></div><button class="wheel-center" id="wheelCenter" aria-label="Spin">SPIN</button></div></div>
+    <div class="wheel-controls"><div class="wheel-info"><span class="tiny-dot"></span><span id="wheelInfo">6 possible outcomes</span></div><button class="spin-button" id="spinBtn">↻ <span>Spin the wheel</span></button><button class="spin-all" id="spinAllBtn" title="Spin all wheels">Spin all</button></div>
+    <div class="wheel-strip" id="wheelStrip"></div>
+    <div class="result-strip" id="resultStrip"><span class="result-mark">✦</span><div><strong>Ready when you are</strong><p>Give the wheel a spin to get started.</p></div><span class="result-right">GOOD LUCK ↗</span></div>
+   </section>
+   <section class="editor-panel"><div class="editor-header"><div><div class="panel-overline">CUSTOMIZE</div><h2 id="editorHeading">Wheel entries</h2></div><span class="editor-count" id="editorCount">6 ITEMS</span></div>
+    <div id="editorContent"></div>
+   </section></div>
+   <section class="features-row"><div><span class="feature-symbol">◇</span><div><strong>Truly random</strong><span>Cryptographic random picks</span></div></div><div><span class="feature-symbol">▤</span><div><strong>Save as you go</strong><span>Your browser remembers</span></div></div><div><span class="feature-symbol">↗</span><div><strong>Share the fun</strong><span>Send your wheel to anyone</span></div></div></section>
+  </main>
+  <footer class="footer"><span>© 2026 OrbitWheel Studio</span><span>CREATED FOR THE JOY OF CHANCE</span><button id="langBtn">VI / EN</button></footer>
+ </div>
+</div>
+<div class="modal-backdrop hidden" id="modal"><div class="modal-card"><button class="modal-close" id="closeModal" aria-label="Close dialog">×</button><div id="modalBody"></div></div></div>
+<div class="toast" id="toast" role="status"></div><input type="file" accept="application/json,.json" id="fileInput" hidden>
+<script src="./app.js"></script></body></html>
