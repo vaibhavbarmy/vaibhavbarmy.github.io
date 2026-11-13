@@ -36,3 +36,32 @@
 .navbar .dropdown-item:focus {
   color: #fff !important;
 }
+
+/* Equal, tight gap: last summary line ↔ hr ↔ first body line.
+   Hexo inserts <span id="more"> between excerpt and hr. */
+.post-content p:has(+ #more),
+.post-content ul:has(+ #more),
+.post-content ol:has(+ #more),
+.post-content p:has(+ hr),
+.post-content ul:has(+ hr),
+.post-content ol:has(+ hr),
+.markdown-body p:has(+ #more),
+.markdown-body ul:has(+ #more),
+.markdown-body ol:has(+ #more),
+.markdown-body p:has(+ hr),
+.markdown-body ul:has(+ hr),
+.markdown-body ol:has(+ hr) {
+  margin-bottom: 0;
+}
+.post-content hr + p,
+.post-content hr + ul,
+.post-content hr + ol,
+.markdown-body hr + p,
+.markdown-body hr + ul,
+.markdown-body hr + ol {
+  margin-top: 0;
+}
+.post-content hr,
+.markdown-body hr {
+  margin: 0.75rem 0;
+}
